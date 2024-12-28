@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-enter {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        .fade-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-3xl font-bold">GraphicStudio</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#portfolio" class="hover:text-gray-400">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-700 via-gray-900 to-black text-white py-24 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6">Crafting Stunning Visuals</h2>
+            <p class="text-lg md:text-2xl mb-8">We bring your ideas to life with cutting-edge graphic design.</p>
+            <a href="#portfolio" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-400 transition ease-in-out duration-300">Explore Our Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p class="text-gray-700 text-lg">We are a team of professional graphic designers committed to excellence in visual storytelling. Our mission is to deliver high-quality designs that captivate and inspire.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transform transition ease-in-out duration-300">
+                    <img src="https://via.placeholder.com/300" alt="Design 1" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Project Title</h3>
+                        <p class="text-gray-700">A brief description of the project.</p>
+                    </div>
+                </div>
+                <!-- Repeat for additional portfolio items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-gray-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <p class="text-lg mb-8">Have a project in mind? Let's work together!</p>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full p-4 rounded-lg border border-gray-400 focus:ring-2 focus:ring-green-500">
+                <input type="email" placeholder="Your Email" class="w-full p-4 rounded-lg border border-gray-400 focus:ring-2 focus:ring-green-500">
+                <textarea placeholder="Your Message" class="w-full p-4 rounded-lg border border-gray-400 focus:ring-2 focus:ring-green-500"></textarea>
+                <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-400 transition ease-in-out duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 GraphicStudio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
